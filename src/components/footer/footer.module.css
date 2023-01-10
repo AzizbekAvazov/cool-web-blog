@@ -1,0 +1,38 @@
+.wrapper {
+    margin-top: auto;
+    background-color: var(--blue);
+
+    font-size: 1.2rem;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    height: 10vh;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    font-family: -apple-system;
+}
+
+.wrapper .link {
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    margin-right: 5px;
+}
+
+.wrapper div {
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

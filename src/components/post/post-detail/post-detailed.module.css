@@ -1,0 +1,35 @@
+.wrapper {
+    width: 61vw;
+
+    margin: 0 auto;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.sourceCode {
+    font-size: 22px;
+}
+
+.sourceCode * {
+    white-space: initial;
+}
+
+.sourceCode img {
+    max-width: 100%;
+    height: auto;
+}
+
+.backButton {
+    display: inline-block;
+
+    padding: 20px;
+
+    cursor: pointer;
+}
+
+.backButton img {
+    max-width: 60px;
+    height: auto;
+}

@@ -1,0 +1,48 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 100px;
+}
+
+.displayFlex {
+    display: flex;
+    justify-content: center;
+}
+
+.postsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.author {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    cursor: pointer;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: end;
+
+    background: linear-gradient(to right, midnightblue, var(--blue) 50%, black 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+.author:hover {
+    background-position: 0 100%;
+}
+
+.postCardContainer {
+    height: 150px;
+    margin-bottom: 25px;
+}

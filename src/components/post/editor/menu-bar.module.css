@@ -1,0 +1,31 @@
+.menuBarContainer {
+    /*
+    margin-top: 15px;
+    */
+}
+
+.menuBarContainer button {
+    /*background-color: #FFFFFF;*/
+    color: black;
+    border: 1px solid black;
+
+    font-weight: 600;
+    border-radius: 4px;
+    /*margin-right: 4px;
+    margin-bottom: 8px;*/
+
+    margin-right: 2px;
+    min-width: fit-content;
+    width: 50px;
+    height: 30px;
+    padding: 0 5px;
+
+    cursor: pointer;
+
+    background-color: #FFFFFF;
+}
+
+.iconSize {
+/*    width: 20px;
+    height: 20px;*/
+}
