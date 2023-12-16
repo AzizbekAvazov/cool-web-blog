@@ -33,3 +33,47 @@
     max-width: 60px;
     height: auto;
 }
+
+.tagTitle {
+    font-family: -apple-system;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.tagsParent {
+    margin: 20px 30px;
+    border: 1px solid var(--light-black);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: -apple-system;
+}
+
+.tag {
+    border-radius: 2px;
+
+    padding: 3px 10px;
+
+    transition: background-color 0.3s ease-in-out;
+    /*
+    color: #800080;
+    */
+
+    font-weight: bold;
+    margin-right: 8px;
+
+    font-size: 1.2rem;
+
+    background-color: var(--light-black);
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.tag:hover {
+
+}

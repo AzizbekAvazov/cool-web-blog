@@ -136,9 +136,6 @@ const Home = (props) => {
         <div className={style.wrapper}>
             <div>
                 {/*PROJECTS*/}
-         {/*       <div className={style.displayFlex}>
-                    <h2>My Projects</h2>
-                </div>*/}
 
                 <div className={style.displayFlex}>
                     <h2>Latest Blogs</h2>
@@ -153,7 +150,11 @@ const Home = (props) => {
                                 postsList.map(function (post) {
                                     return (
                                         <div key={getUniqueKey()} className={style.postCardContainer}>
-                                            <PostCard iOnClick={()=>handlePostCardClick(post.owner_fullname, post.post_id)} source_code={post.source_code} title={post.title}/>
+                                            <PostCard iOnClick={()=>handlePostCardClick(post.owner_fullname, post.post_id)}
+                                                      source_code={post.source_code}
+                                                      title={post.title}
+                                                      tags={post.tags}
+                                            />
                                             {/*<div className={style.post}>
                                                 TITLE
                                                 <h3>{post.title}</h3>

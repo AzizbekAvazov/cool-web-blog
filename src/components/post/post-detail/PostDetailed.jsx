@@ -1,7 +1,13 @@
 import style from "./post-detailed.module.css";
 import {useEffect, useState} from "react";
 import {useLocation, useNavigate} from "react-router-dom";
-import {getApplicationUrl, getRequestNumber, printErrorMessage, printResponseData} from "../../../lib/js/Utilities";
+import {
+    getApplicationUrl,
+    getRequestNumber,
+    getUniqueKey,
+    printErrorMessage,
+    printResponseData
+} from "../../../lib/js/Utilities";
 import {useSelector} from "react-redux";
 import parse from "html-react-parser";
 import {Link} from "@mui/material";
@@ -91,6 +97,28 @@ const PostDetailed = (props) => {
                     }
                 </div>
             </div>
+
+            <div className={style.tagsParent}>
+                <div className={style.tagTitle}>Tags: </div>
+
+                {
+                    selectedPost && selectedPost.tags && selectedPost.tags.length !== 0 ?
+                        <div className={style.tags}>
+                            {
+                                selectedPost.tags.map(function (tag) {
+                                    return (
+                                        <span key={getUniqueKey()} className={style.tag}>{tag}</span>
+                                    )
+                                })
+                            }
+                        </div>
+                        :
+                        null
+                }
+            </div>
+
+
+
         </div>
     )
 }

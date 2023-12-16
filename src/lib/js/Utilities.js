@@ -3,7 +3,7 @@ const isDebugging = true;
 const APPLICATION_URL = "http://localhost:8080";
 
 const REQUEST_NUMBER = 5;
-const IDLE_TIMEOUT_MINUTES = 30;
+const IDLE_TIMEOUT_MINUTES = 180;
 
 export const getIdleTimeoutMinutes = () => {
     return IDLE_TIMEOUT_MINUTES;
