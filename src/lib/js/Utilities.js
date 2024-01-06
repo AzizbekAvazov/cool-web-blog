@@ -1,6 +1,6 @@
 import {nanoid} from "@reduxjs/toolkit";
 const isDebugging = true;
-const APPLICATION_URL = "http://localhost:8080";
+const APPLICATION_URL = "https://cool-webblog-backendapi.onrender.com"; // local: "http://localhost:8080";
 
 const REQUEST_NUMBER = 5;
 const IDLE_TIMEOUT_MINUTES = 180;
